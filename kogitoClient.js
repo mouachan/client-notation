@@ -95,7 +95,7 @@ angular
     function createPayloadNotation(siren,variables){
       var payload = '{"CodeNaf":"' + siren + '","Variables": [';
       if(variables.rentab_13!=null) payload+='{ "valeur":' + variables.rentab_13 + ',"type": "rentab_13"}';
-      if(variables.rentab_38!=null) payload+=',{ "valeur":' + variables.rentab_138+ ',"type": "rentab_38"}';
+      if(variables.rentab_38!=null) payload+=',{ "valeur":' + variables.rentab_38+ ',"type": "rentab_38"}';
       if(variables.strfin_36!=null) payload+=',{ "valeur":' + variables.strfin_36 + ',"type": "strfin_36"}';
       payload+='],"rules":[]}}';
       return payload;
